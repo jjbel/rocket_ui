@@ -14,4 +14,4 @@ jobs:
 # TODO caching node_modules
 
       - run: npm install
-      - run: npm publish
+      - run: npm run publish
