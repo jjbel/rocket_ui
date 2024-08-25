@@ -1,3 +1,5 @@
+// configuring Electron Forge
+
 module.exports = {
   packagerConfig: {
     ignore: [
