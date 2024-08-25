@@ -20,7 +20,8 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/utils": "^3.0.0",
-    "plotly.js-dist": "^2.34.0"
+    "plotly.js-dist": "^2.34.0",
+    "svelte_sidebar": "^0.2.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.2.1",
