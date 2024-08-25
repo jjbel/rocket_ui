@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  /* overflow: hidden; */
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background-color: rgb(24, 24, 24);
+  overflow: hidden;
+}
+
+#app {
+  /* sidebar and content are direct children of app, not body */
+  display: flex;
+}
+
+/* sidebar more styling: */
+#svelte-sidebar {
+  padding: 0.5rem;
+}
+#root-group {
+  padding: 0.2rem;
+}
+.sidebar-toggle {
+  /* TODO restore. hide the sidebar toggle */
+  /* display: none; */
+  background-color: pink;
+}
+
+.plot-container {
+  width: 100%;
+}
