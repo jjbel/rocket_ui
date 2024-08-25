@@ -11,7 +11,11 @@ jobs:
         with:
           cache: 'npm'
 
-# TODO caching node_modules
+      # TODO caching node_modules
 
       - run: npm install
-      - run: npm run publish
+      - run: |
+          echo "Token: $GITHUB_TOKEN"
+          npm run publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
