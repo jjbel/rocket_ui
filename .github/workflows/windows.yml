@@ -1,0 +1,17 @@
+name: Windows Build
+
+on: [push, pull_request, fork]
+
+jobs:
+  windows-test:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          cache: 'npm'
+
+# TODO caching node_modules
+
+      - run: npm install
+      - run: npm publish

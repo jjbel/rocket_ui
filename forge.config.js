@@ -17,5 +17,17 @@ module.exports = {
     {
       name: '@electron-forge/maker-dmg'
     }
+  ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'jjbel',
+          name: 'rocket_ui'
+        },
+        prerelease: true
+      }
+    }
   ]
 }
