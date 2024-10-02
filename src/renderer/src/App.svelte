@@ -3,5 +3,5 @@
   import HomeData from './components/HomeData.svelte'
 </script>
 
-<Sidebar />
+<!-- <Sidebar /> -->
 <HomeData />

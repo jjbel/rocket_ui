@@ -1,4 +1,4 @@
-import { app, shell, BrowserWindow, ipcMain } from 'electron'
+import { app, shell, BrowserWindow, ipcMain, dialog } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
@@ -35,6 +35,13 @@ function createWindow(): void {
   }
 }
 
+async function handleFileOpen(): Promise<any> {
+  const { canceled, filePaths } = await dialog.showOpenDialog()
+  if (!canceled) {
+    return filePaths[0]
+  }
+}
+
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
@@ -51,6 +58,9 @@ app.whenReady().then(() => {
 
   // IPC test
   ipcMain.on('ping', () => console.log('pong'))
+  app.whenReady().then(() => {
+    ipcMain.handle('dialog:openFile', handleFileOpen)
+  })
 
   createWindow()
 

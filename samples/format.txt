@@ -1,0 +1,10 @@
+F: time, state, temperature, alt, ram_diff, bno_x, bno_y, bno_z, high_x, high_y, high_z, gyro_x, gyro_y, gyro_z
+
+S: lat(deg),lat(min),lat(sec),lat(N/W),lon(deg),lon(min),lon(sec),lon(E/W),v_horizontal,course,hdop,vdop,type,alt(ABL),fix_time_since_start,time_since_fix
+
+time
+temperature
+alt
+bno_xyz
+high_xyz
+gyro_xyz

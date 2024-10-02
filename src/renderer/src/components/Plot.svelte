@@ -3,6 +3,7 @@
   import Plotly from 'plotly.js-dist'
 
   export let index
+//   export let data
   export let caption = 'Caption'
   export let line_color = '#ffffff'
 
@@ -15,15 +16,15 @@
       plot_element,
       [
         {
-          x: [1, 2, 3, 4, 5],
-          y: [1, 2, 4, 8, 16],
-          mode: 'lines+markers',
+          x: [],
+          y: [],
+          mode: 'lines', // lines+markers
           marker: {
             color: line_color,
             size: 8
           },
           line: {
-            width: 2
+            width: 5
           }
         }
       ],
@@ -42,6 +43,7 @@
       }
     )
   })
+
 </script>
 
 <div class="plot-parent">

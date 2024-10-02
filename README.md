@@ -11,10 +11,3 @@ The app uses:
 3. [Electron-vite](https://electron-vite.org/): for build tools
 4. [Electron Forge](https://www.electronforge.io/): for building executables
 
-TODO see default files for IPC usage
-
-TODO see default CSS
-
-TODO see default SVG usage (just through CSS!)
-
-# TODO How i initilaized the app for future ref
